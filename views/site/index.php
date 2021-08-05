@@ -2,16 +2,28 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = Yii::t('app','Home');
 ?>
 <div class="site-index">
 
+    <!-- <div class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Language <b class="caret"></b></a>
+        < ?php
+            echo \app\components\LanguageDropdown::widget();
+        ?>
+    </div> -->
+
     <div class="jumbotron">
-        <h1>Yii2 Basic Development</h1>
+        <!-- <h1>Yii2 Basic Development</h1> -->
+        <h1><?= Yii::t('app','congratulation') ?> </h1>
 
-        <p class="lead">This is also implementing versioning system.</p>
+        <p class="lead">This website is using <?= Yii::$app->language ?>.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p>
+            <a class="btn btn-lg btn-success" href="http://www.yiiframework.com">
+                <?= Yii::t('app','Get started with Yii') ?>
+            </a>
+        </p>
     </div>
 
     <div class="body-content">
