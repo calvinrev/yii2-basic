@@ -51,20 +51,20 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+composer create-project --prefer-dist yiisoft/yii2-app-basic yii2-basic
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
+Now you should be able to access the application through the following URL, assuming `yii2-basic` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/basic/web/
+http://localhost/yii2-basic/web/
 ~~~
 
 ### Install from an Archive File
 
 Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
+a directory named `yii2-basic` that is directly under the Web root.
 
 Set cookie validation key in `config/web.php` file to some random secret string:
 
@@ -78,7 +78,7 @@ Set cookie validation key in `config/web.php` file to some random secret string:
 You can then access the application through the following URL:
 
 ~~~
-http://localhost/basic/web/
+http://localhost/yii2basic/web/
 ~~~
 
 
@@ -115,9 +115,9 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;dbname=acme',
     'username' => 'root',
-    'password' => '1234',
+    'password' => '',
     'charset' => 'utf8',
 ];
 ```
